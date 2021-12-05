@@ -1,6 +1,5 @@
 import React from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
-// import logo from "https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg";
 import "../CSS/Menu.css";
 import Separator from './separator';
 

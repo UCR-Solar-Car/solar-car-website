@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/solar-car-website/static/css/main.6323e2a2.chunk.css",
+    "main.js": "/solar-car-website/static/js/main.5ee61933.chunk.js",
+    "main.js.map": "/solar-car-website/static/js/main.5ee61933.chunk.js.map",
+    "runtime-main.js": "/solar-car-website/static/js/runtime-main.db96c8f2.js",
+    "runtime-main.js.map": "/solar-car-website/static/js/runtime-main.db96c8f2.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/solar-car-website/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.ca9ce76e.chunk.js": "/solar-car-website/static/js/2.ca9ce76e.chunk.js",
+    "static/js/2.ca9ce76e.chunk.js.map": "/solar-car-website/static/js/2.ca9ce76e.chunk.js.map",
+    "static/js/3.4d726f12.chunk.js": "/solar-car-website/static/js/3.4d726f12.chunk.js",
+    "static/js/3.4d726f12.chunk.js.map": "/solar-car-website/static/js/3.4d726f12.chunk.js.map",
+    "index.html": "/solar-car-website/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/solar-car-website/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.6323e2a2.chunk.css.map": "/solar-car-website/static/css/main.6323e2a2.chunk.css.map",
+    "static/js/2.ca9ce76e.chunk.js.LICENSE.txt": "/solar-car-website/static/js/2.ca9ce76e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db96c8f2.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.ca9ce76e.chunk.js",
+    "static/css/main.6323e2a2.chunk.css",
+    "static/js/main.5ee61933.chunk.js"
+  ]
+}

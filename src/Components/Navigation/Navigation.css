@@ -1,0 +1,18 @@
+.navbar {
+    background-color: #206cc0;
+    color: white;
+}
+
+.navitem {
+    color: white !important;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.navbrand {
+    color: white !important;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.navitem:hover, .navbrand:hover {
+    color: #f1ab00 !important;
+}

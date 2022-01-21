@@ -3,6 +3,7 @@ import Sponser from './Sponser'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Button } from "react-bootstrap"
 import Separator from "../Navigation/Separator"
+import "./Sponserships.css"
 
 const Sponserships = () => {
     return (
@@ -12,33 +13,46 @@ const Sponserships = () => {
             <Button className="sponser-button">
                 Sponser Packet
             </Button>
-            <Separator height="5vh"/>
+            <Separator height="5vh" />
             <p className="sponser-text">Thank you current sponsers</p>
             <Container>
                 <Row>
-                    <Col md={3} sm={4} xs={6}>
-                        <Sponser image="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="google"/>
+                    <Col className="platinum-title" xl={12}>Platinum</Col>
+                    <Col xs={6}>
+                        <Sponser image="https://static.wixstatic.com/media/4b18cd_11a2c1b493b745e4b68a31828ed390bb~mv2.png/v1/fit/w_2500,h_1330,al_c/4b18cd_11a2c1b493b745e4b68a31828ed390bb~mv2.png" alt="UCR GCAP" />
                     </Col>
-                    <Col md={3} sm={4} xs={6}>
-                        <Sponser image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="amazon"/>
+                    <Col xs={6}>
+                        <Sponser image="https://www.danielandrade.net/wp-content/uploads/2016/03/altium_logo.png" alt="Altium" />
                     </Col>
-                    <Col md={3} sm={4} xs={6}>
-                        <Sponser image="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/1024px-Meta_Platforms_Inc._logo.svg.png" alt="meta"/>
+                </Row>
+                <Row>
+                    <Col className="gold-title" xl={12}>Gold</Col>
+                    <Col sm={4} xs={6}>
+                        <Sponser image="https://yt3.ggpht.com/ytc/AKedOLRi4SX-wn3z9HxDyU_beTfAmZCNLNgXEvMJwDI5=s900-c-k-c0x00ffffff-no-rj" alt="Triad Magnetics" />
                     </Col>
-                    <Col md={3} sm={4} xs={6}>
-                        <Sponser image="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" alt="netflix"/>
+                    <Col sm={4} xs={6}>
+                        <Sponser image="https://logos-download.com/wp-content/uploads/2016/11/ESRI_logo_logotype.png" alt="ESRI" />
                     </Col>
-                    <Col md={3} sm={4} xs={6}>
-                        <Sponser image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/2560px-Microsoft_logo_%282012%29.svg.png" alt="microsoft"/>
+                    <Col sm={{ span: 4, offset: 0 }} xs={{ span: 6, offset: 3 }}>
+                        <Sponser image="https://upload.wikimedia.org/wikipedia/commons/e/e5/ANSYS_logo.png" alt="ANSYS" />
                     </Col>
-                    <Col md={3} sm={4} xs={6}>
-                        <Sponser image="https://logos-world.net/wp-content/uploads/2020/07/Asus-Logo-1995-present.png" alt="asus"/>
+                </Row>
+                <Row>
+                    <Col className="silver-title" xl={12}>Silver</Col>
+                    <Col md={{ span: 4, offset: 4 }} sm={{ span: 4, offset: 4 }} xs={{ span: 6, offset: 3 }}>
+                        <Sponser image="https://pbs.twimg.com/profile_images/963152650115072000/7fX4teaZ_400x400.jpg" alt="IEEE" />
                     </Col>
-                    <Col md={3} sm={4} xs={6}>
-                        <Sponser image="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" alt="samsung"/>
+                </Row>
+                <Row>
+                    <Col className="bronze-title" xl={12}>Bronze</Col>
+                    <Col sm={4} xs={6}>
+                        <Sponser image="https://www.solarreviews.com/content/company/3729772f584d101fe367846ed0e5070e6992/logo/New%20Day%20Solar%20Text%20Logo%20Since%201988.png" alt="New Day Solar" />
                     </Col>
-                    <Col md={3} sm={4} xs={6}>
-                        <Sponser image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell_Logo.png/1200px-Dell_Logo.png" alt="dell"/>
+                    <Col sm={4} xs={6}>
+                        <Sponser image="https://sdu-vikings.dk/wp-content/uploads/2020/07/Gigavac.png" alt="Gigavac" />
+                    </Col>
+                    <Col sm={{ span: 4, offset: 0 }} xs={{ span: 6, offset: 3 }}>
+                        <Sponser image="https://sdu-vikings.dk/wp-content/uploads/2020/07/Gigavac.png" alt="Gigavac" />
                     </Col>
                 </Row>
             </Container>

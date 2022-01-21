@@ -12,10 +12,13 @@
     height: 100%;
     width: 100%;
     padding: 15px;
+    max-height: 30vh;
 }
 
 .sponser {
-    width: 100%;
+    max-width: 80%;
+    max-height: 80%;
+    /* background-color: red; */
 }
 
 .sponser-title {

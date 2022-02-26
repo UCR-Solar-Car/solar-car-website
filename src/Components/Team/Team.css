@@ -1,0 +1,68 @@
+/* .profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: green;
+} */
+
+.team-wrapper {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 100%;
+    background-color: purple;
+    margin: 0;
+    padding: 0; */
+}
+
+.leads {
+    width: 80%;
+    margin: 0;
+    padding: 0;    
+}
+
+.profile-container {
+    width: 100%;
+    padding: 5px;
+}
+
+.t-line {
+    width: 80%;
+    margin: auto;
+}
+
+.team-title {
+    font-size: 3em;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.members-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.members{
+    width: 80%;
+}
+
+.team-name, .team-members {
+    text-align: center;
+}
+
+.team-name {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.team-members {
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

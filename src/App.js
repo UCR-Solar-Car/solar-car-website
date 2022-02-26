@@ -10,7 +10,11 @@ import {
     Route,
     Routes
 } from "react-router-dom";
+import Team from './Components/Team/Team';
+import AboutUs from './Components/About-Us/AboutUs';
+import Footer from './Components/Helper-Components/Footer';
 
+require('dotenv').config();
 
 function App() {
     return (
@@ -19,13 +23,13 @@ function App() {
             <Navigation />
             <Routes>
                 <Route path='/' exact element={<Home />} />
-                <Route path='/about-us' element={<Recruitment />} />
-                <Route path='/team' element={<Recruitment />} />
+                <Route path='/about-us' element={<AboutUs />} />
+                <Route path='/team' element={<Team />} />
                 <Route path='/sponsers' element={<Sponserships />} />
                 <Route path='/recruitment' element={<Recruitment />} />
                 <Route path='/contact-us' element={<ContactUs />} />
             </Routes>
-
+            <Footer />
         </div>
     );
 }

@@ -1,3 +1,19 @@
+.recruitment-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recruitment {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .r-discord-button, .email-button, .highlander-link-button {
     width: 200px;
     display: flex;
@@ -6,7 +22,7 @@
     flex-direction: row;
     margin: 5px 10px;
     border-radius: 5px;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .r-discord-button {
@@ -52,19 +68,40 @@
 }
 
 .recruitment-title {
-    font-family: 'IBM Plex Serif', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5em;
     text-align: center;
 }
 
-.recruitment-text, .calender-text {
-    font-family: 'Mukta', sans-serif;
+.calender-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding: 0 25px;
-    font-size: 1.5em;
+    font-size: 1.25em;
+}
+
+.recruitment-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
 }
 
 .calender-text {
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+.recruitment-small-group {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.recruitment-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.r-line {
+    width: 100%;
 }

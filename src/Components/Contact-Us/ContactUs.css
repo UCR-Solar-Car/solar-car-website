@@ -3,10 +3,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    /* width: 80%; */
 }
 
-.discord-button, .instagram-button, .facebook-button, .linkedin-button {
-    width: 200px;
+.contact-content {
+    width: 80%;
+}
+
+.discord-button {
+    width: 45%;
+}
+
+.instagram-button, .facebook-button, .linkedin-button {
+    /* width: 200px; */
+    width: 100%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +29,7 @@
 }
 
 .instagram-button, .facebook-button, .linkedin-button {
-    margin: 10px 10px;
+    margin: 5px 2px;
 }
 
 .discord-button {
@@ -46,7 +57,10 @@
 
 .instagram-logo, .facebook-logo, .linkedin-logo {
     padding-right: 10px;
+    margin: 0;
+    /* padding: 0; */
     height: 100%;
+    /* background-color: red; */
 }
 
 .instagram-button:hover {
@@ -87,7 +101,7 @@
 
 .text {
     font-family: 'Mukta', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: center;
     padding: 0px 25px;
     margin: 10px;
@@ -108,4 +122,14 @@
 .email-link:hover {
     text-decoration: underline;
     color: #0077B5;
+}
+
+.contact-line {
+    width: 100%;
+}
+
+.contact-photo {
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
 }

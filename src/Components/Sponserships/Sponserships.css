@@ -1,5 +1,73 @@
+.sponserships {
+    padding: 0;
+    
+    margin: 0;
+}
+
 .sponserships .platinum-title, .gold-title, .silver-title, .bronze-title {
     font-size: 2.5em;
-    font-family: 'IBM Plex Serif', serif;
+    /* font-family: 'IBM Plex Serif', serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+/* 
+.silver-title {
+    background-color: red;
+} */
+
+
+.sponserships .sponser-banner-container {  
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.sponserships .sponser-banner-img {  
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover
+
+}
+
+.sponserships .sponser-banner-tint {  
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.sponserships .sponser-banner-text {  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4em;
+}
+
+ .sponser-button {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px 5px;
+    margin: 0;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    border: 4px solid #206cc0;
+    color: #206cc0;
+}
+
+.sponserships a {
+    text-decoration: none;
+}
+
+.sponser-text {
+    padding-top: 15px;
     text-align: center;
 }

@@ -1,0 +1,48 @@
+.profile-card {
+    /* background: #003368; */
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.profile-card img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.profile-position {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+    padding-top: 0; 
+}
+
+.profile-name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25em;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px; 
+    padding-bottom: 0;   
+}
+
+.square {
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    background-color: #ccc;
+    position: relative;
+    margin: 5px;
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }

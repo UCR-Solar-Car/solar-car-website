@@ -1,7 +1,7 @@
 import React from "react";
 import Calendar from "@ericz1803/react-google-calendar";
 
-const API_KEY = "AIzaSyCtUbyy00Q3FWVrYm_h2N3YKMdexhGglgE";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 let styles = {
     calendar: {
@@ -11,7 +11,7 @@ let styles = {
         borderRadius: "15px",
         padding: "10px",
         color: "#003066",
-        fontFamily: "'IBM Plex Serif', serif",
+        fontFamily: "Georgia, 'Times New Roman', Times, serif"
     },
 
     day: {
@@ -26,7 +26,8 @@ let styles = {
 
     eventText: {
         color: "#003066",
-        fontFamily: "'Mukta', sans-serif"        
+        fontFamily: "Verdana, Geneva, Tahoma, sans-serif"
+
     },
 
     eventCircle: {
@@ -41,12 +42,15 @@ let styles = {
 }
 
 let calendars = [
-    { calendarId: "nt3r2mrajrpiicfrd2u1lg4jh8@group.calendar.google.com" }
+    { calendarId:  process.env.REACT_APP_CALENDER_KEY}
 
 ];
 
 
 const Calender = () => {
+
+    console.log(process.env.REACT_APP_API_KEY)
+
     return (
         <div className="calender"
             style={{
@@ -54,7 +58,7 @@ const Calender = () => {
                 justifyContent: "center",
                 alignItems: "center", 
             }}>
-            <div style={{ width: "90vw" }}>
+            <div style={{ width: "80vw" }}>
                 <Calendar apiKey={API_KEY} calendars={calendars} styles={styles} />
             </div>
         </div>

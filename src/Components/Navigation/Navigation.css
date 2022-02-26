@@ -1,18 +1,34 @@
 .navbar {
     background-color: #206cc0;
+    background-color: #FFFFFF;
     color: white;
+    /* color: black; */
+    height: 9vh;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-container {
+    /* padding: 0; */
 }
 
 .navitem {
-    color: white !important;
-    font-family: 'IBM Plex Serif', serif;
+    color: black !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    text-align: center;
 }
 
-.navbrand {
-    color: white !important;
-    font-family: 'IBM Plex Serif', serif;
-}
+/* .navbrand {
+    color: black !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */
 
 .navitem:hover, .navbrand:hover {
     color: #f1ab00 !important;
+}
+
+
+.navbrand img {
+    height: 8vh;
 }

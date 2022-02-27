@@ -25,7 +25,7 @@ const Team = () => {
         ["David Wilson", "Co-Project Manager", David, "50% 0%"],
         ["Andreas August", "Mechanical Lead", Andreas, "50% 30%"],
         ["Sunny Zeng", "Electrical Lead", Sunny, "50% 0%"],
-        ["Chris de La Tore", "Electrical Lead", Chris, "50% 50%"],
+        ["Chris de La Torre", "Electrical Lead", Chris, "50% 50%"],
         ["Daisy Rojas Garcia", "Battery Lead", Daisy, "50% 0%"],
         ["Hallie Pham", "Telemetry Lead", Hallie, "50% 00%"],
         ["Divyank Shah", "Business Lead", Divyank, "50% 00%"],

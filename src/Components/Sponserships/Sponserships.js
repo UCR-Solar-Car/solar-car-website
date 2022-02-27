@@ -7,6 +7,8 @@ import "./Sponserships.css"
 import Battery from "../../Images/Battery.jpg"
 import Header from '../Helper-Components/Header'
 
+import ElCon from "../../Images/Sponsers/ElconLogo.png"
+
 const Sponserships = () => {
     return (
         <div className='sponserships'>
@@ -69,12 +71,12 @@ const Sponserships = () => {
                         <Sponser image="https://sdu-vikings.dk/wp-content/uploads/2020/07/Gigavac.png" alt="Gigavac" />
                     </Col>
                     <Col sm={3} xs={6}>
-                        <Sponser image="https://sdu-vikings.dk/wp-content/uploads/2020/07/Gigavac.png" alt="Gigavac" />
+                        <Sponser image={ElCon} alt="Gigavac" />
                     </Col>
                 </Row>
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Col className="bronze-title" xl={12}><hr className="sponser-title-line" />Friend<hr className="sponser-title-line" /></Col>
-                    <Col sm={3} xs={6}>
+                    {/* <Col sm={3} xs={6}>
                         <Sponser image="https://www.solarreviews.com/content/company/3729772f584d101fe367846ed0e5070e6992/logo/New%20Day%20Solar%20Text%20Logo%20Since%201988.png" alt="New Day Solar" />
                     </Col>
                     <Col sm={3} xs={6}>
@@ -82,13 +84,13 @@ const Sponserships = () => {
                     </Col>
                     <Col sm={3} xs={6}>
                         <Sponser image="https://sdu-vikings.dk/wp-content/uploads/2020/07/Gigavac.png" alt="Gigavac" />
-                    </Col>
+                    </Col> */}
                 </Row>
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Col xs={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column" }}>
                         <p className="sponser-text" >Interested in becoming a sponser? Learn more below!</p>
 
-                        <a href= "">
+                        <a href= "https://drive.google.com/file/d/1lYJ8mq1y9bDRtMmahY207laER16EXg82/view?usp=sharing" target="_blank">
                             <Button className="sponser-button">
                                 Become a Sponser
                             </Button>

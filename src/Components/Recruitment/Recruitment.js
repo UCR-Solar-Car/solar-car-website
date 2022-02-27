@@ -38,10 +38,11 @@ const Recruitment = () => {
 
                 <Separator height="5vh" />
                 <hr className='r-line' />
+                <Separator height="5vh" />
 
                 <Container >
                     <Row >
-                    <Col lg={6} sm={12}>
+                        <Col lg={6} sm={12}>
                             <img className="recruitment-small-group" src={GroupPhoto} />
                         </Col>
                         <Col lg={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -52,29 +53,35 @@ const Recruitment = () => {
                                 us through email below!
                             </p>
                         </Col>
-                       
+
 
                     </Row>
                 </Container>
-                {/* 
-                <Separator height="3vh" /> */}
+
+                <Separator height="3vh" />
 
                 <Container className="test" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Row >
                         <Col md={4} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <Button className="r-discord-button">
-                                <Discord className="r-discord-logo" size={36} />Discord
-                            </Button>
+                            <a className = "button-link" href="https://discord.gg/Gt7HefU4Nps" target="_blank">
+                                <Button className="r-discord-button">
+                                    <Discord className="r-discord-logo" size={36} />Discord
+                                </Button>
+                            </a>
                         </Col>
                         <Col md={4} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <Button className="highlander-link-button">
-                                <BoxArrowUpRight className="highlander-link-logo" size={24} />Highlander Link
-                            </Button>
+                            <a className = "button-link" href="https://highlanderlink.ucr.edu/organization/ieee" target="_blank">
+                                <Button className="highlander-link-button">
+                                    <BoxArrowUpRight className="highlander-link-logo" size={24} />Highlander Link
+                                </Button>
+                            </a>
                         </Col>
                         <Col md={4} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <Button className="email-button">
-                                <Envelope className="email-logo" size={24} />Questions
-                            </Button>
+                            <a className = "button-link" href="mailto:ucrsolarcar@gmail.com" target="_blank">
+                                <Button className="email-button">
+                                    <Envelope className="email-logo" size={24} />Questions
+                                </Button>
+                            </a>
                         </Col>
                     </Row>
                 </Container>
@@ -90,7 +97,7 @@ const Recruitment = () => {
                     <Row style={{ display: 'flex', justifyContent: 'center' }}>
 
                         {data.map(subteam => (
-                            <Col lg={4} md={6} sm={6} xs = {12}>
+                            <Col lg={4} md={6} sm={6} xs={12}>
                                 <SubTeam name={subteam[0]} img={subteam[1]} description={subteam[2]} />
                             </Col>
                         )

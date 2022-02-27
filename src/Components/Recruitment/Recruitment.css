@@ -105,3 +105,7 @@
 .r-line {
     width: 100%;
 }
+
+.button-link {
+    text-decoration: none;
+}

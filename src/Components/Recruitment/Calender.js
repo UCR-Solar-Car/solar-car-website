@@ -10,7 +10,7 @@ let styles = {
         margin: "0",
         borderRadius: "15px",
         padding: "10px",
-        color: "#003066",
+        color: "#123a71",
         fontFamily: "Georgia, 'Times New Roman', Times, serif"
     },
 
@@ -19,13 +19,13 @@ let styles = {
     },
 
     today: {
-        color: "#003066",
-        border: "2px solid #003066",
+        color: "#123a71",
+        border: "2px solid #123a71",
         fontSize: "1.25em"
     },
 
     eventText: {
-        color: "#003066",
+        color: "#123a71",
         fontFamily: "Verdana, Geneva, Tahoma, sans-serif"
 
     },
@@ -35,7 +35,7 @@ let styles = {
     },
     
     multiEvent: {
-        background: "#003066",
+        background: "#123a71",
         color: "rgb(255, 255, 255)"
     },
 

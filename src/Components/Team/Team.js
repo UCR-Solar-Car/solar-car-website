@@ -18,6 +18,8 @@ import Separator from '../Helper-Components/Separator'
 
 
 
+
+
 const Team = () => {
 
     const data = [

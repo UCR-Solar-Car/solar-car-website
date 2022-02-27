@@ -15,7 +15,7 @@ const Navigation = () => {
             <Navbar fixed="top" collapseOnSelect expand="md" className='navbar'>
                 <Container fluid className = "navbar-container">
                     <Navbar.Brand href="/" className="navbrand"><img className = "logo" src={Logo} /></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle className = "toggle" aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto nav">
                             <Nav.Link as={Link} to="/" className="navitem">Home</Nav.Link>

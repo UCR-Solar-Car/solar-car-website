@@ -10,7 +10,11 @@
 }
 
 .navbar-container {
-    /* padding: 0; */
+    margin: 5px;
+}
+
+.toggle {
+    background-color: #123a71 !important;
 }
 
 .navitem {
@@ -20,6 +24,7 @@
     /* background-color: white; */
     text-align: center;
     font-size: 1.25em;
+    padding: 8px;
 }
 
 /* .navbrand {
@@ -35,4 +40,9 @@
 
 .navbrand img {
     height: 8vh;
+    padding: 0;
+}
+
+.navbrand {
+    padding: 0;
 }

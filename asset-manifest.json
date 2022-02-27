@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/solar-car-website/static/css/main.e2e581e8.chunk.css",
-    "main.js": "/solar-car-website/static/js/main.5fa47569.chunk.js",
-    "main.js.map": "/solar-car-website/static/js/main.5fa47569.chunk.js.map",
+    "main.css": "/solar-car-website/static/css/main.e144d39c.chunk.css",
+    "main.js": "/solar-car-website/static/js/main.5f197d51.chunk.js",
+    "main.js.map": "/solar-car-website/static/js/main.5f197d51.chunk.js.map",
     "runtime-main.js": "/solar-car-website/static/js/runtime-main.8ff5f200.js",
     "runtime-main.js.map": "/solar-car-website/static/js/runtime-main.8ff5f200.js.map",
     "static/css/2.4eaf0b3b.chunk.css": "/solar-car-website/static/css/2.4eaf0b3b.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.eac76f73.chunk.js.map": "/solar-car-website/static/js/3.eac76f73.chunk.js.map",
     "index.html": "/solar-car-website/index.html",
     "static/css/2.4eaf0b3b.chunk.css.map": "/solar-car-website/static/css/2.4eaf0b3b.chunk.css.map",
-    "static/css/main.e2e581e8.chunk.css.map": "/solar-car-website/static/css/main.e2e581e8.chunk.css.map",
+    "static/css/main.e144d39c.chunk.css.map": "/solar-car-website/static/css/main.e144d39c.chunk.css.map",
     "static/js/2.2dd7950d.chunk.js.LICENSE.txt": "/solar-car-website/static/js/2.2dd7950d.chunk.js.LICENSE.txt",
     "static/media/Andreas.b08060db.jpeg": "/solar-car-website/static/media/Andreas.b08060db.jpeg",
     "static/media/Battery.295baa19.jpg": "/solar-car-website/static/media/Battery.295baa19.jpg",
@@ -22,6 +22,7 @@
     "static/media/David.06eb5d55.jpg": "/solar-car-website/static/media/David.06eb5d55.jpg",
     "static/media/Divyank.15bf9948.jpg": "/solar-car-website/static/media/Divyank.15bf9948.jpg",
     "static/media/DriverInterface.acb34519.png": "/solar-car-website/static/media/DriverInterface.acb34519.png",
+    "static/media/ElconLogo.e83db89e.png": "/solar-car-website/static/media/ElconLogo.e83db89e.png",
     "static/media/FrontLeftRender.149624ce.jpg": "/solar-car-website/static/media/FrontLeftRender.149624ce.jpg",
     "static/media/GroupPhoto_1.8d523f99.jpg": "/solar-car-website/static/media/GroupPhoto_1.8d523f99.jpg",
     "static/media/GroupPhoto_2.b509ff37.jpg": "/solar-car-website/static/media/GroupPhoto_2.b509ff37.jpg",
@@ -36,13 +37,13 @@
     "static/media/Telemetry.0b15b4d9.png": "/solar-car-website/static/media/Telemetry.0b15b4d9.png",
     "static/media/TransparentChassis_1.d5cdf50c.jpg": "/solar-car-website/static/media/TransparentChassis_1.d5cdf50c.jpg",
     "static/media/TransparentDriver.f7438c0c.jpg": "/solar-car-website/static/media/TransparentDriver.f7438c0c.jpg",
-    "static/media/logo.4e67d86c.png": "/solar-car-website/static/media/logo.4e67d86c.png"
+    "static/media/logo2.96a13d93.png": "/solar-car-website/static/media/logo2.96a13d93.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8ff5f200.js",
     "static/css/2.4eaf0b3b.chunk.css",
     "static/js/2.2dd7950d.chunk.js",
-    "static/css/main.e2e581e8.chunk.css",
-    "static/js/main.5fa47569.chunk.js"
+    "static/css/main.e144d39c.chunk.css",
+    "static/js/main.5f197d51.chunk.js"
   ]
 }

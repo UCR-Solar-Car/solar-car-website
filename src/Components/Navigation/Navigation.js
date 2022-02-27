@@ -5,7 +5,7 @@ import {
     Link
 } from 'react-router-dom';
 import Separator from '../Helper-Components/Separator';
-import Logo from "../../Images/logo.png"
+import Logo from "../../Images/logo2.png"
 
 
 const Navigation = () => {

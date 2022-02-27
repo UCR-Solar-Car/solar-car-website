@@ -1,6 +1,7 @@
 .navbar {
     background-color: #206cc0;
-    background-color: #FFFFFF;
+    background-color: #123a71;
+    /* background-color: #FFFFFF; */
     color: white;
     /* color: black; */
     height: 9vh;
@@ -13,10 +14,11 @@
 }
 
 .navitem {
-    color: black !important;
+    color: white !important;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: white;
+    /* background-color: white; */
     text-align: center;
+    font-size: 1.25em;
 }
 
 /* .navbrand {
@@ -26,6 +28,7 @@
 
 .navitem:hover, .navbrand:hover {
     color: #f1ab00 !important;
+    color: lightgray !important;
 }
 
 

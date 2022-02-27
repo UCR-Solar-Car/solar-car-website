@@ -26,19 +26,19 @@ const Footer = () => {
             <Container fluid className="social-media">
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Col xs={1} className="social-icon">
-                        <a className = "social-link" href="google.com" target="_blank"><Facebook /></a>
+                        <a className = "social-link" href="https://www.facebook.com/UCRSolarCar" target="_blank"><Facebook /></a>
                     </Col>
                     <Col xs={1} className="social-icon">
-                        <a className = "social-link" href="google.com" target="_blank"><Instagram /></a>
+                        <a className = "social-link" href="https://www.instagram.com/ucrsolarcar/" target="_blank"><Instagram /></a>
                     </Col>
                     <Col xs={1} className="social-icon">
-                        <a className = "social-link" href="google.com" target="_blank"><Linkedin /></a>
+                        <a className = "social-link" href="https://www.linkedin.com/company/ucr-solar-car/" target="_blank"><Linkedin /></a>
                     </Col>
                     <Col xs={1} className="social-icon">
-                        <a className = "social-link" href="google.com" target="_blank"><Discord /></a>
+                        <a className = "social-link" href="https://discord.gg/Gt7HefU4Np" target="_blank"><Discord /></a>
                     </Col>
                     <Col xs={1} className="social-icon">
-                        <a className = "social-link" href="google.com" target="_blank"><EnvelopeFill /></a>
+                        <a className = "social-link" href="mailto:ucrsolarcar@gmail.com" target="_blank"><EnvelopeFill /></a>
                     </Col>
                 </Row>
             </Container>

@@ -13,6 +13,7 @@ import {
 import Team from './Components/Team/Team';
 import AboutUs from './Components/About-Us/AboutUs';
 import Footer from './Components/Helper-Components/Footer';
+import Links from './Components/Links/Links';
 
 require('dotenv').config();
 
@@ -27,7 +28,8 @@ function App() {
                 <Route path='/team' element={<Team />} />
                 <Route path='/sponsers' element={<Sponserships />} />
                 <Route path='/recruitment' element={<Recruitment />} />
-                <Route path='/contact-us' element={<ContactUs />} />
+                {/* <Route path='/contact-us' element={<ContactUs />} /> */}
+                <Route path='/links' element={<Links />} />
             </Routes>
             <Footer />
         </div>

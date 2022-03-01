@@ -8,6 +8,15 @@ import Battery from "../../Images/Battery.jpg"
 import Header from '../Helper-Components/Header'
 
 import ElCon from "../../Images/Sponsers/ElconLogo.png"
+import Altium from "../../Images/Sponsers/Altium.png"
+import GCAP from "../../Images/Sponsers/GCAP.png"
+import Ansys from "../../Images/Sponsers/Ansys.png"
+import Esri from "../../Images/Sponsers/Esri.png"
+import Gigavac from "../../Images/Sponsers/Gigavac.jpg"
+import IEEE from "../../Images/Sponsers/IEEE.png"
+import Newday from "../../Images/Sponsers/Newday.png"
+import Triad from "../../Images/Sponsers/Triad.png"
+
 
 const Sponserships = () => {
     return (
@@ -38,40 +47,40 @@ const Sponserships = () => {
                     <Col className="platinum-title" xl={12}><hr className="sponser-title-line" />Platinum<hr className="sponser-title-line" /></Col>
 
                     <Col sm={6} xs={12}>
-                        <Sponser image="https://static.wixstatic.com/media/4b18cd_11a2c1b493b745e4b68a31828ed390bb~mv2.png/v1/fit/w_2500,h_1330,al_c/4b18cd_11a2c1b493b745e4b68a31828ed390bb~mv2.png" alt="UCR GCAP" />
+                        <Sponser image={GCAP} alt="UCR GCAP" />
                     </Col>
                     <Col sm={6} xs={12}>
-                        <Sponser image="https://www.danielandrade.net/wp-content/uploads/2016/03/altium_logo.png" alt="Altium" />
+                        <Sponser image={Altium} alt="Altium" />
                     </Col>
                 </Row>
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Col className="gold-title" xl={12}><hr className="sponser-title-line" />Gold<hr className="sponser-title-line" /></Col>
                     <Col sm={4} xs={6}>
-                        <Sponser image="https://yt3.ggpht.com/ytc/AKedOLRi4SX-wn3z9HxDyU_beTfAmZCNLNgXEvMJwDI5=s900-c-k-c0x00ffffff-no-rj" alt="Triad Magnetics" />
+                        <Sponser image={Triad} alt="Triad Magnetics" />
                     </Col>
                     <Col sm={4} xs={6}>
-                        <Sponser image="https://logos-download.com/wp-content/uploads/2016/11/ESRI_logo_logotype.png" alt="ESRI" />
+                        <Sponser image={Esri} alt="ESRI" />
                     </Col>
                     <Col sm={4} xs={6}>
-                        <Sponser image="https://upload.wikimedia.org/wikipedia/commons/e/e5/ANSYS_logo.png" alt="ANSYS" />
+                        <Sponser image={Ansys} alt="ANSYS" />
                     </Col>
                 </Row>
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Col className="silver-title" xl={12}><hr className="sponser-title-line" />Silver<hr className="sponser-title-line" /></Col>
                     <Col sm={4} xs={{ span: 6 }}>
-                        <Sponser image="https://1000logos.net/wp-content/uploads/2019/03/IEEE-Logo.jpg" alt="IEEE" />
+                        <Sponser image={IEEE} alt="IEEE" />
                     </Col>
                 </Row>
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Col className="bronze-title" xl={12}><hr className="sponser-title-line" />Bronze<hr className="sponser-title-line" /></Col>
                     <Col sm={3} xs={6}>
-                        <Sponser image="https://www.solarreviews.com/content/company/3729772f584d101fe367846ed0e5070e6992/logo/New%20Day%20Solar%20Text%20Logo%20Since%201988.png" alt="New Day Solar" />
+                        <Sponser image={Newday} alt="New Day Solar" />
                     </Col>
                     <Col sm={3} xs={6}>
-                        <Sponser image="https://sdu-vikings.dk/wp-content/uploads/2020/07/Gigavac.png" alt="Gigavac" />
+                        <Sponser image={Gigavac} alt="Gigavac" />
                     </Col>
                     <Col sm={3} xs={6}>
-                        <Sponser image={ElCon} alt="Gigavac" />
+                        <Sponser image={ElCon} alt="El Con Chargers" />
                     </Col>
                 </Row>
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

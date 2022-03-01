@@ -36,8 +36,8 @@ const Team = () => {
     const members = [
         ["Electrical", "Sunny Zeng", "Chris De La Torre", "Daisy Rojas Garcia", "Kiana Triatan", "Kevin Ramirez"], //Electrical Team
         ["Mechanical", "Andreas August"], //Mechanical Team
-        ["Battery"], //Battery Team
-        ["Solar Array"], //Solar Array Team
+        // ["Battery"], //Battery Team
+        // ["Solar Array"], //Solar Array Team
         ["Telemetry", "Hallie Pham", "Vy Vo", "Aaron Tam", "Divyank Shah"], //Telemetry Team
         ["Driver Interface", "Aaron Tam", "Divyank Shah"], //Driver Interface
         ["Business", "Divyank Shah"] //Business Team

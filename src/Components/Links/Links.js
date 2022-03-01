@@ -30,7 +30,7 @@ const Links = () => {
                 <Row>
                     {
                         links.map(link => (
-                            <Col xs={3} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <Col lg={3} sm = {6} style={{ display: 'flex', justifyContent: 'center' }}>
                                 <a className="link" href={link[1]} target="_blank">
                                     {link[0]}
                                 </a>

@@ -10,24 +10,16 @@ import TransparentDriver from "../../Images/GroupPhoto_2.jpg"
 import Separator from '../Helper-Components/Separator';
 import SubTeam from './SubTeam';
 
-import Motor from "../../Images/Motor.jpg"
-import Battery from "../../Images/Battery.jpg"
-import Telemetry from "../../Images/Telemetry.png"
-import SolarArray from "../../Images/SolarArray.jpeg"
-import DriverInterface from "../../Images/DriverInterface.png"
-import Mechanical from "../../Images/Suspension.jpg"
-import Business from "../../Images/Business.png"
-
 const Recruitment = () => {
 
     const data = [
-        ["Electrical", Motor, "Responsible for the electrical components and full electrical system integration of the vehicle. We work closely with Battery and Solar Array teams to design and implement the main power systems of the vehicle."],
-        ["Mechanical", Mechanical, "Responsible for the mechanical components of the vehicle which includes: chassis, suspension, breaks, stearing, wheels, and aeroshell. Utilizing CAD software, we design and simulate proposed concepts to ensure optimal and desired results. Lastly, responsible for manufacturing of aeroshell and final assembly."],
-        ["Battery", Battery, "Configure the batteries to provide optimate performance both in terms of power and range. Ensure batteries remain cool and charge/discharge appropriately."],
-        ["Solar Array", SolarArray, "Configure solar array to optimize energy recieved to send to the various boards and motors."],
-        ["Telemetry", Telemetry, "Communicate information between the solar car, driver interface, and chase vehicles while in operation. Ensure that all components are working at appropriate levels through sensor data."],
-        ["Driver Interface", DriverInterface, "Provide the driver with a simple yet informative user interface to inform them about speeds, battery levels, temperatures and other various necessary information required while driving the car."],
-        ["Business", Business, "Manage various mediums of communciation including Instagram, official website, Discord for annoucnements, socials, fundraisers. Maintain and build coporate partnerships along with UCR IEEE."]
+        ["Electrical", , "Responsible for the electrical components and full electrical system integration of the vehicle. We work closely with Battery and Solar Array teams to design and implement the main power systems of the vehicle."],
+        ["Mechanical", , "Responsible for the mechanical components of the vehicle which includes: chassis, suspension, breaks, stearing, wheels, and aeroshell. Utilizing CAD software, we design and simulate proposed concepts to ensure optimal and desired results. Lastly, responsible for manufacturing of aeroshell and final assembly."],
+        ["Battery", , "Configure the batteries to provide optimate performance both in terms of power and range. Ensure batteries remain cool and charge/discharge appropriately."],
+        ["Solar Array", , "Configure solar array to optimize energy recieved to send to the various boards and motors."],
+        ["Telemetry", , "Communicate information between the solar car, driver interface, and chase vehicles while in operation. Ensure that all components are working at appropriate levels through sensor data."],
+        ["Driver Interface", , "Provide the driver with a simple yet informative user interface to inform them about speeds, battery levels, temperatures and other various necessary information required while driving the car."],
+        ["Business", , "Manage various mediums of communciation including Instagram, official website, Discord for annoucnements, socials, fundraisers. Maintain and build coporate partnerships along with UCR IEEE."]
     ];
 
     return (

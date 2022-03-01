@@ -2,7 +2,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home/Home';
 import Recruitment from './Components/Recruitment/Recruitment';
-import ContactUs from './Components/Contact-Us/ContactUs';
 import Sponserships from './Components/Sponserships/Sponserships';
 import Navigation from './Components/Navigation/Navigation';
 

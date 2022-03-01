@@ -42,7 +42,7 @@ const Sponserships = () => {
 
 
 
-            <Container>
+            <Container fluid className = "sponsor-container">
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Col className="platinum-title" xl={12}><hr className="sponser-title-line" />Platinum<hr className="sponser-title-line" /></Col>
 

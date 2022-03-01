@@ -22,3 +22,21 @@
     justify-content: center;
     align-items: center;
 }
+
+.about-text {
+    font-size: 1.25em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pillars {
+    width: 80%;
+    padding: 10px;
+}

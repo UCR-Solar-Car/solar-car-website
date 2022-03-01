@@ -4,6 +4,8 @@ import Chassis from "../../Images/TransparentChassis_1.jpg"
 import Separator from '../Helper-Components/Separator'
 import "./AboutUs.css"
 import GroupPhoto from "../../Images/GroupPhoto_2.jpg"
+import { Container, Row, Col } from "react-bootstrap"
+import Render from "../../Images/TransparentDriver.jpg"
 
 const AboutUs = () => {
     return (
@@ -34,6 +36,49 @@ const AboutUs = () => {
                     </p>
                 </div>
             </div>
+
+            <div className="about-photo-wrapper">
+                <img className="about-photo" src={Render} />
+            </div>
+
+            <Container fluid className ="pillars">
+                <Row>
+                    <Col xs = {6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><p className = "about-title">Leadership</p></Col>
+                    <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <p className="about-text">
+                            The UCR Solar Car team encourages members to be strong leaders in their
+                            perspective industries and smart decision makers
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <p className="about-text">
+                            The leads and all other members of the team work hard everyday to make
+                            creative improvements to the solar car electrically, mechanically, and design wise
+                        </p>
+                    </Col>
+                    <Col xs = {6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><p className = "about-title">Innovation</p></Col>
+                </Row>
+                <Row>
+                    <Col xs = {6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><p className = "about-title">Dedication</p></Col>
+                    <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <p className="about-text">
+                            Countless hours are dedicated outside of school to improve and perfect our solar
+                            car. Without the dedication of our team, progress and completion would not be possible
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <p className="about-text">
+                            The UCR Solar Car would not be possible without all members of the team, so
+                            we encourage strong collaboration, open communication, and team bonding
+                        </p>
+                    </Col>
+                    <Col xs = {6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}><p className = "about-title">Teamwork</p></Col>
+                </Row>
+            </Container>
             <div className="about-photo-wrapper">
                 <img className="about-photo" src={GroupPhoto} />
             </div>

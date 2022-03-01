@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.cc7214b5.chunk.css",
-    "main.js": "/static/js/main.d55b6813.chunk.js",
-    "main.js.map": "/static/js/main.d55b6813.chunk.js.map",
+    "main.js": "/static/js/main.b41942f2.chunk.js",
+    "main.js.map": "/static/js/main.b41942f2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d740182d.js",
     "runtime-main.js.map": "/static/js/runtime-main.d740182d.js.map",
     "static/css/2.4eaf0b3b.chunk.css": "/static/css/2.4eaf0b3b.chunk.css",
@@ -17,17 +17,15 @@
     "static/media/Altium.79d77bcb.png": "/static/media/Altium.79d77bcb.png",
     "static/media/Andreas.ec04ed46.jpeg": "/static/media/Andreas.ec04ed46.jpeg",
     "static/media/Ansys.60b41bd5.png": "/static/media/Ansys.60b41bd5.png",
-    "static/media/BackLeftTransparent.0963a8ed.jpg": "/static/media/BackLeftTransparent.0963a8ed.jpg",
-    "static/media/Battery.48fc25da.jpg": "/static/media/Battery.48fc25da.jpg",
-    "static/media/Business.cbb40fed.png": "/static/media/Business.cbb40fed.png",
+    "static/media/BackLeftTransparent.3b41310b.jpg": "/static/media/BackLeftTransparent.3b41310b.jpg",
+    "static/media/Battery.d6063350.jpg": "/static/media/Battery.d6063350.jpg",
     "static/media/Chris.8ce521c8.jpeg": "/static/media/Chris.8ce521c8.jpeg",
     "static/media/Daisy.bd269ef8.jpg": "/static/media/Daisy.bd269ef8.jpg",
     "static/media/David.350025e5.jpg": "/static/media/David.350025e5.jpg",
     "static/media/Divyank.50f91be3.jpg": "/static/media/Divyank.50f91be3.jpg",
-    "static/media/DriverInterface.acb34519.png": "/static/media/DriverInterface.acb34519.png",
     "static/media/ElconLogo.66dd0c35.png": "/static/media/ElconLogo.66dd0c35.png",
     "static/media/Esri.e738b11c.png": "/static/media/Esri.e738b11c.png",
-    "static/media/FrontLeftRender.149624ce.jpg": "/static/media/FrontLeftRender.149624ce.jpg",
+    "static/media/FrontLeftRender.7f5a88fd.jpg": "/static/media/FrontLeftRender.7f5a88fd.jpg",
     "static/media/GCAP.871a2b7b.png": "/static/media/GCAP.871a2b7b.png",
     "static/media/Gigavac.e1a74cff.jpg": "/static/media/Gigavac.e1a74cff.jpg",
     "static/media/GroupPhoto_1.25ae98a9.jpg": "/static/media/GroupPhoto_1.25ae98a9.jpg",
@@ -35,15 +33,11 @@
     "static/media/Hallie.cbae4bd9.jpg": "/static/media/Hallie.cbae4bd9.jpg",
     "static/media/IEEE.d273c556.png": "/static/media/IEEE.d273c556.png",
     "static/media/Leen.631960d2.jpg": "/static/media/Leen.631960d2.jpg",
-    "static/media/Motor.faeb8f77.jpg": "/static/media/Motor.faeb8f77.jpg",
     "static/media/Newday.0ae49662.png": "/static/media/Newday.0ae49662.png",
-    "static/media/SolarArray.47cef694.jpeg": "/static/media/SolarArray.47cef694.jpeg",
     "static/media/SolarCarRender_1.775e6a07.jpg": "/static/media/SolarCarRender_1.775e6a07.jpg",
     "static/media/Sunny.e212d803.jpg": "/static/media/Sunny.e212d803.jpg",
-    "static/media/Suspension.909ce58e.jpg": "/static/media/Suspension.909ce58e.jpg",
-    "static/media/Telemetry.0b15b4d9.png": "/static/media/Telemetry.0b15b4d9.png",
-    "static/media/TransparentChassis_1.e2afb129.jpg": "/static/media/TransparentChassis_1.e2afb129.jpg",
-    "static/media/TransparentDriver.151eda26.jpg": "/static/media/TransparentDriver.151eda26.jpg",
+    "static/media/TransparentChassis_1.daf58575.jpg": "/static/media/TransparentChassis_1.daf58575.jpg",
+    "static/media/TransparentDriver.0c3723a7.jpg": "/static/media/TransparentDriver.0c3723a7.jpg",
     "static/media/logo2.403833f9.png": "/static/media/logo2.403833f9.png"
   },
   "entrypoints": [
@@ -51,6 +45,6 @@
     "static/css/2.4eaf0b3b.chunk.css",
     "static/js/2.0b0878ee.chunk.js",
     "static/css/main.cc7214b5.chunk.css",
-    "static/js/main.d55b6813.chunk.js"
+    "static/js/main.b41942f2.chunk.js"
   ]
 }

@@ -5,10 +5,11 @@ import { Container, Row, Col } from "react-bootstrap"
 
 import Image from "../../Images/BackLeftTransparent.jpg"
 import Separator from '../Helper-Components/Separator'
+import LinkGroup from './LinkGroup'
 
 const Links = () => {
 
-    const links = [
+    const apps = [
         ["Project Manager", "https://forms.gle/aAETGUzffTZWXm6t8"],
         ["Mechanical Lead", "https://forms.gle/NRLn3yNQcNXFyUss9"],
         ["Electrical Lead", "https://forms.gle/CAKDUQRqP4PRH2SH8"],
@@ -19,26 +20,19 @@ const Links = () => {
         ["Business Lead", "https://forms.gle/iJUGcpsa63BCAr1Q9"]
     ]
 
+    const events = [
+        ["Chassis Derusting", "https://forms.gle/1MYJnK1YyPxre8CQ9"],
+        ["Panda Express Fundraiser", "https://community.pandaexpress.com/fundraiser/events/promotions/4aab9990-01c7-08a1-3fd5-3ed6071fed32/en/landing"]
+    ]
+
     return (
         <div>
             <Header img={Image} name="Links and Resources" offset="50% 60%" />
             <Separator height="5vh" />
             <hr className='t-line' />
-            <Separator height="5vh" />
-            <p className="link-headers">Lead Application Links</p>
-            <Container fluid className = "links-container">
-                <Row>
-                    {
-                        links.map(link => (
-                            <Col lg={3} sm = {6} style={{ display: 'flex', justifyContent: 'center' }}>
-                                <a className="link" href={link[1]} target="_blank">
-                                    {link[0]}
-                                </a>
-                            </Col>
-                        ))
-                    }
-                </Row>
-            </Container>
+
+            <LinkGroup name= "Lead Applications" links = {apps}/>
+            <LinkGroup name = "Events" links = {events}/>
 
         </div>
     )

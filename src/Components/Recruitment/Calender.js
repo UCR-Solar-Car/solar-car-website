@@ -26,7 +26,8 @@ let styles = {
 
     eventText: {
         color: "#123a71",
-        fontFamily: "Verdana, Geneva, Tahoma, sans-serif"
+        fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
+        fontSize: ".75em"
 
     },
 
@@ -43,14 +44,9 @@ let styles = {
 
 let calendars = [
     { calendarId:  process.env.REACT_APP_CALENDER_KEY}
-
 ];
 
-
 const Calender = () => {
-
-    console.log(process.env.REACT_APP_API_KEY)
-
     return (
         <div className="calender"
             style={{

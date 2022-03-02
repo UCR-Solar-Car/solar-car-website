@@ -23,12 +23,12 @@ function App() {
             <Navigation />
             <Routes>
                 <Route path='/' exact element={<Home />} />
-                <Route path='/about-us' element={<AboutUs />} />
-                <Route path='/team' element={<Team />} />
-                <Route path='/sponsers' element={<Sponserships />} />
-                <Route path='/recruitment' element={<Recruitment />} />
+                <Route path='/about-us' exact element={<AboutUs />} />
+                <Route path='/team' exact element={<Team />} />
+                <Route path='/sponsers' exact element={<Sponserships />} />
+                <Route path='/recruitment' exact element={<Recruitment />} />
                 {/* <Route path='/contact-us' element={<ContactUs />} /> */}
-                <Route path='/links' element={<Links />} />
+                <Route path='/links' exact element={<Links />} />
             </Routes>
             <Footer />
         </div>

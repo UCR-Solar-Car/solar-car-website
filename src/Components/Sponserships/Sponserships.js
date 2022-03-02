@@ -22,25 +22,9 @@ const Sponserships = () => {
     return (
         <div className='sponserships'>
 
-
-            {/* <div className='sponser-banner-container'>
-                <img className="sponser-banner-img" src={Battery} />
-                <div className="sponser-banner-tint"></div>
-                <h4 className='sponser-title sponser-banner-text'>Sponsers</h4>
-            </div> */}
-
             <Header img={Battery} name="Sponsers" />
 
-
-
-
-            {/* <h4 className='sponser-title'>Sponsers</h4> */}
-            {/* <p className="sponser-text">We would like to thank all of our generous sponsers. Without them much of our current progress would be impossible.</p> */}
-
             <Separator height="5vh" />
-            {/* <p className="sponser-text">Thank you current sponsers</p> */}
-
-
 
             <Container fluid className = "sponsor-container">
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -85,15 +69,7 @@ const Sponserships = () => {
                 </Row>
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Col className="bronze-title" xl={12}><hr className="sponser-title-line" />Friend<hr className="sponser-title-line" /></Col>
-                    {/* <Col sm={3} xs={6}>
-                        <Sponser image="https://www.solarreviews.com/content/company/3729772f584d101fe367846ed0e5070e6992/logo/New%20Day%20Solar%20Text%20Logo%20Since%201988.png" alt="New Day Solar" />
-                    </Col>
-                    <Col sm={3} xs={6}>
-                        <Sponser image="https://sdu-vikings.dk/wp-content/uploads/2020/07/Gigavac.png" alt="Gigavac" />
-                    </Col>
-                    <Col sm={3} xs={6}>
-                        <Sponser image="https://sdu-vikings.dk/wp-content/uploads/2020/07/Gigavac.png" alt="Gigavac" />
-                    </Col> */}
+         
                 </Row>
                 <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Col xs={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column" }}>

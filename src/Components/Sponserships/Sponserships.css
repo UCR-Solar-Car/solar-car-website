@@ -6,15 +6,9 @@
 
 .sponserships .platinum-title, .gold-title, .silver-title, .bronze-title {
     font-size: 2.5em;
-    /* font-family: 'IBM Plex Serif', serif; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
-/* 
-.silver-title {
-    background-color: red;
-} */
-
 
 .sponserships .sponser-banner-container {  
     width: 100%;

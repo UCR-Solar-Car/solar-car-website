@@ -4,10 +4,7 @@ import "./SubTeam.css"
 const SubTeam = (props) => {
     return (
 
-        <div className="subteam" 
-        // style={{ background: `url(${props.img})`, backgroundSize: 'cover', backgroundColor: "rgba(0, 0, 0, .5)", backgroundBlendMode: "multiply" }}
-        >
-            {/* <div className="subteam-tint"></div> */}
+        <div className="subteam">
             <p className='subteam-title'>{props.name}</p>
             <p className='subteam-description'>{props.description}</p>
         </div>

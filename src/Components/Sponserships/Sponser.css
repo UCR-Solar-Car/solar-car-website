@@ -2,58 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 100%;
-    width: 100%; */
     padding: 15px;
-    /* max-height: 30vh; */
 }
 
 .sponser-wrapper img {
     width: 60%;
 }
-
-/* .sponser {
-    width: 80%;
-    height: 80%;
-    background-color: red;
-} */
-
-/* .sponser-title {
-    font-size: 2.25em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    padding: 0;
-    padding-bottom: 5px;
-    margin: 0;
-} */
-
-/* .sponser-text {
-    font-size: 1.5em;
-    font-family: 'Mukta', sans-serif;
-    text-align: center;
-    padding: 0px 25px;
-} */
-
-/* .sponser-button {
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px 5px;
-    margin: 0;
-    border-radius: 5px;
-    font-family: 'IBM Plex Serif', serif;
-}
-
-.sponser-button {
-    background-color: white;
-    border: 4px solid #206cc0;
-    color: #206cc0;
-}
-
-.sponser-button:hover {
-    color: white;
-    background-color: #206cc0;
-    border: 4px solid #206cc0;
-} */

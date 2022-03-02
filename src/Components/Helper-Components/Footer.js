@@ -44,8 +44,6 @@ const Footer = () => {
             </Container>
 
             <Separator height="4vh" />
-            {/* <hr className='t-line' />
-            <Separator height="5vh" /> */}
         </div>
     )
 }

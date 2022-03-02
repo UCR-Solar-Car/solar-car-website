@@ -1,9 +1,6 @@
 .navbar {
-    background-color: #206cc0;
     background-color: #123a71;
-    /* background-color: #FFFFFF; */
     color: white;
-    /* color: black; */
     height: 9vh;
     padding: 0;
     margin: 0;
@@ -21,16 +18,10 @@
     color: white !important;
     background-color: #123a71;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* background-color: white; */
     text-align: center;
     font-size: 1.25em;
     padding: 8px;
 }
-
-/* .navbrand {
-    color: black !important;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-} */
 
 .navitem:hover, .navbrand:hover {
     color: #f1ab00 !important;

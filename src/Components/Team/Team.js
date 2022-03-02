@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../Helper-Components/Header'
 import SolarCarRender_1 from "../../Images/SolarCarRender_1.jpg"
-// import ReactArcText from 'react-arc-text'
 import { Row, Col, Container } from "react-bootstrap"
 import "./Team.css"
 import Profile from './Profile'

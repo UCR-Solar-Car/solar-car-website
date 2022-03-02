@@ -27,7 +27,6 @@ function App() {
                 <Route path='/team' exact element={<Team />} />
                 <Route path='/sponsers' exact element={<Sponserships />} />
                 <Route path='/recruitment' exact element={<Recruitment />} />
-                {/* <Route path='/contact-us' element={<ContactUs />} /> */}
                 <Route path='/links' exact element={<Links />} />
             </Routes>
             <Footer />

@@ -2,8 +2,8 @@
 
 <img src = "./src/Images/Website.png"/>
 The official UC Riverside Solar Car website codebase. Built using React, React-Bootstrap, and React-Router.
-Contains information regarding various subteams, goals, achievements, and recruitment information. Visit the deployed 
-version at [ucrsolarcar.com] (https://ucrsolarcar.com)
+Contains information regarding various subteams, goals, achievements, and recruitment information. 
+Visit the deployed version at <a href="https://ucrsolarcar.com">ucrsolarcar.com<a/>
 
 ## Available Scripts
 

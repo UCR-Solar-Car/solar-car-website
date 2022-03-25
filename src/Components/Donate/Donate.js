@@ -24,7 +24,7 @@ const Donate = () => {
     const [available, setAvailable] = useState(255);
     const [reserved, setReserved] = useState(0);
     const [taken, setTaken] = useState(0);
-    const [names, setNames] = useState([]);
+    const [names, setNames] = useState(() => new Set());
     const [user, setUser] = useState({
         cell: "",
         name: "",
@@ -52,18 +52,18 @@ const Donate = () => {
         } if (cell == "" || name == "" || email == "" || phone == "" || username == "") {
             alert("Error: Please fill out all data fields before submitting!")
             return;
-        } 
+        }
         if (parseInt(cell) < 1 || parseInt(cell) > 255) {
             alert("Error: Please enter a valid cell number between 1 andd 255")
             return;
         } if (parseInt(cell) >= 1 && parseInt(cell) <= 255) {
             for (var i = 0; i < takenCells.length; i++) {
-                if (parseInt(cell) == takenCells.at(i)) {
+                if (parseInt(cell) == takenCells[i]) {
                     alert("Error: Unforutnately, this cell is already taken. Please enter another available cell!")
                     return;
                 }
             }
-        } 
+        }
         if (!email.includes("@") || !email.includes(".")) {
             alert("Error: Please enter a valid email")
             return;
@@ -83,21 +83,24 @@ const Donate = () => {
 
     useEffect(() => {
         (async () => {
-            const querySnapshot = await getDocs(collection(db, "Adopt a Cell"));
-            querySnapshot.forEach((doc) => {
-                if (doc.data().verified) {
-                    takenCells.push(parseInt(doc.data().cell));
-                    console.log(doc.data().name)
-                    setNames([...names, doc.data().name])
-                } else if (doc.data().verified == false) {
-                    reservedCells.push(parseInt(doc.data().cell));
-                }
-            });
+            try {
+                const querySnapshot = await getDocs(collection(db, "Adopt a Cell"));
+                querySnapshot.forEach((doc) => {
+                    if (doc.data().verified) {
+                        takenCells.push(parseInt(doc.data().cell));
+                        setNames(names => new Set(names).add(doc.data().name))
+                    } else if (doc.data().verified == false) {
+                        reservedCells.push(parseInt(doc.data().cell));
+                    }
+                });
+            } catch (error) {
+                alert(error)
+            }
 
             for (var i = 0; i < takenCells.length - 1; i++) {
                 var min = i;
                 for (var j = i + 1; j < takenCells.length; j++) {
-                    if (takenCells.at(min) > takenCells.at(j)) {
+                    if (takenCells[min] > takenCells[j]) {
                         min = j;
                     }
                 }
@@ -109,7 +112,7 @@ const Donate = () => {
             for (var i = 0; i < reservedCells.length - 1; i++) {
                 var min = i;
                 for (var j = i + 1; j < reservedCells.length; j++) {
-                    if (reservedCells.at(min) > reservedCells.at(j)) {
+                    if (reservedCells[min] > reservedCells[j]) {
                         min = j;
                     }
                 }
@@ -122,11 +125,11 @@ const Donate = () => {
             var k = 0;
             for (var i = 1; i <= 255; i += 1) {
                 var color = available_color;
-                if (reservedCells.at(k) == i) {
+                if (reservedCells[k] == i) {
                     color = reserved_color;
                     k++;
                 }
-                if (takenCells.at(j) == i) {
+                if (takenCells[j] == i) {
                     color = taken_color;
                     j++;
                 }
@@ -134,7 +137,6 @@ const Donate = () => {
                     <Cell color={color} index={i} key={i} />
                 );
             }
-            console.log(available, takenCells.length, reservedCells.length)
             setAvailable(available - takenCells.length - reservedCells.length);
             setReserved(reservedCells.length);
             setTaken(takenCells.length);
@@ -239,14 +241,11 @@ const Donate = () => {
                 </Container>
                 <Container>
                     <p className="names-text">A Huge Thank You to Our Current Adopters</p>
-                    {
-                        console.log("name", names)
-                    }
                     <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         {
-                            names.map((name) => (
-                                <Col xs = {3} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                    <p className="name">{name}</p>
+                            Array.from(names).map((name) => (
+                                <Col xs={3} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <p className="name" style={{textAlign: "center"}}>{name}</p>
                                 </Col>
                             ))
                         }

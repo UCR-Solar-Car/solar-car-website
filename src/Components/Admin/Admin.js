@@ -49,16 +49,20 @@ const Admin = () => {
 
     useEffect(() => {
         (async () => {
-            const querySnapshot = await getDocs(collection(db, "Authorized Admins"));
-            querySnapshot.forEach((doc) => {
-                setEmails(emails => [...emails, doc.data().email])
-            });
+            try {
+                const querySnapshot = await getDocs(collection(db, "Authorized Admins"));
+                querySnapshot.forEach((doc) => {
+                    setEmails(emails => [...emails, doc.data().email])
+                });
+            } catch (error) {
+                alert(error)
+            }
+
         })();
         setRetrieved(true);
     }, [])
 
     useEffect(() => {
-
         for (var i = 0; i < emails.length; i++) {
             if (emails[i] === email) {
                 setVerified(true);

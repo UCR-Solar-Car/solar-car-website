@@ -1,0 +1,85 @@
+.cell-number {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline;
+}
+
+.cell-name {
+    font-size: 1.25em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline;
+}
+
+.cell-contact {
+    font-size: .75em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.coin, .trash {
+    font-size: 1.75em;
+    color: black;
+}
+
+.coin {
+    color: green;
+}
+
+.trash:hover {
+    transform: scale(1.25);
+    color: red;
+    cursor: pointer;
+    
+}
+
+.coin:hover {
+    transform: scale(1.25);
+    color: darkgreen;
+    cursor: pointer;
+}
+
+.welcome-message, .program-name {
+    font-size: 1.75em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.program-name {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.cells-title {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.update {
+    font-size: 1.25em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: white;
+    color: #123a71;
+    border: 5px solid #123a71;
+    padding: 2px 35px;
+    border-radius: 5px;
+}
+
+.update:hover {
+    background-color: #123a71;
+    color: white;
+}
+
+.update-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

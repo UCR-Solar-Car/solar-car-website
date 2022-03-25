@@ -1,0 +1,14 @@
+.cell {
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    padding: 0;
+    margin: 10px;
+    border: none;
+    background-color: black;
+    border: none;
+}

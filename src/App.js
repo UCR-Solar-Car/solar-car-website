@@ -13,6 +13,8 @@ import Team from './Components/Team/Team';
 import AboutUs from './Components/About-Us/AboutUs';
 import Footer from './Components/Helper-Components/Footer';
 import Links from './Components/Links/Links';
+import Donate from './Components/Donate/Donate';
+import Admin from './Components/Admin/Admin';
 
 require('dotenv').config();
 
@@ -28,6 +30,8 @@ function App() {
                 <Route path='/sponsers' exact element={<Sponserships />} />
                 <Route path='/recruitment' exact element={<Recruitment />} />
                 <Route path='/links' exact element={<Links />} />
+                <Route path='/donate' exact element={<Donate />} />
+                <Route path='/admin' exact element={<Admin />} />
             </Routes>
             <Footer />
         </div>

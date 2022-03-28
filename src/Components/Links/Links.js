@@ -21,8 +21,9 @@ const Links = () => {
     ]
 
     const events = [
-        ["Chassis Derusting", "https://forms.gle/1MYJnK1YyPxre8CQ9"],
-        ["Panda Express Fundraiser", "https://community.pandaexpress.com/fundraiser/events/promotions/4aab9990-01c7-08a1-3fd5-3ed6071fed32/en/landing"]
+        ["Panda Express Fundraiser", "https://community.pandaexpress.com/fundraiser/events/promotions/4aab9990-01c7-08a1-3fd5-3ed6071fed32/en/landing"],
+        ["Chassis Painting Party", "https://forms.gle/Yv9iQhRWJgjSZPt96"], 
+        ["Solarium Cleaning Party", "https://forms.gle/TF7wtHap1gpirXYQ9"]
     ]
 
     return (

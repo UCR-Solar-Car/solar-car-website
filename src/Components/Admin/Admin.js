@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { auth, db } from "../Donate/firebase.js";
 import Header from '../Helper-Components/Header';
 import Photo from "../../Images/GroupPhoto_1.jpg"
-import { collection, getDocs, addDoc, setDoc } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import Dashboard from './Dashboard.js';
 import Separator from '../Helper-Components/Separator.js';
 import { Container, Row, Col } from "react-bootstrap"
@@ -99,8 +99,6 @@ const Admin = () => {
                 <div>
                     <Header img={Photo} name="Admin Portal" offset="50% 45%" />
                     <Separator height="5vh" />
-                    {/* <button onClick={signOut}>Logout</button> */}
-
                     <div className='admin-login'>
                         <p className="loading">Please login with a UCR verified email</p>
                         <button className="login" onClick={signIn}>Login</button>

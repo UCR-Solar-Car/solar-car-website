@@ -23,7 +23,8 @@ const Links = () => {
     const events = [
         ["Panda Express Fundraiser", "https://community.pandaexpress.com/fundraiser/events/promotions/4aab9990-01c7-08a1-3fd5-3ed6071fed32/en/landing"],
         ["Chassis Painting Party", "https://forms.gle/Yv9iQhRWJgjSZPt96"], 
-        ["Solarium Cleaning Party", "https://forms.gle/TF7wtHap1gpirXYQ9"]
+        ["Solarium Cleaning Party", "https://forms.gle/TF7wtHap1gpirXYQ9"],
+        ["Anonymous Feeback Form", "https://forms.gle/8a9UxBT7KrbgkDvb6"]
     ]
 
     return (

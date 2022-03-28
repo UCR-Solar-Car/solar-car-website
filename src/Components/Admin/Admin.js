@@ -37,16 +37,6 @@ const Admin = () => {
             });
     }
 
-    const signOut = () => {
-        signOut(auth).then(() => {
-            setVerified(false);
-            setEmail("");
-            setName("");
-        }).catch((error) => {
-            alert(error)
-        });
-    }
-
     useEffect(() => {
         (async () => {
             try {

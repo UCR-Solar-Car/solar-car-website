@@ -4,7 +4,7 @@ import Separator from '../Helper-Components/Separator'
 import Header_Photo from "../../Images/TopRender.jpg"
 import "./Donate.css"
 import { Row, Col, Container } from "react-bootstrap"
-import { collection, getDocs, addDoc, setDoc, doc } from "firebase/firestore";
+import { collection, getDocs, setDoc, doc } from "firebase/firestore";
 import { db } from "./firebase.js"
 import Cell from './Cell'
 
@@ -34,7 +34,7 @@ const Donate = () => {
         verified: false
     });
 
-    const { cell, name, email, phone, username, paid } = user;
+    const { cell, name, email, phone, username } = user;
 
     const handleChange = (e) => {
         setUser({ ...user, [e.target.name]: e.target.value })
@@ -49,7 +49,7 @@ const Donate = () => {
         if (submitted) {
             alert("Error: You have already submitted the form! Please refresh the page to submit another form or contact a lead for more assistance")
             return;
-        } if (cell == "" || name == "" || email == "" || phone == "" || username == "") {
+        } if (cell === "" || name === "" || email === "" || phone === "" || username === "") {
             alert("Error: Please fill out all data fields before submitting!")
             return;
         }
@@ -58,7 +58,7 @@ const Donate = () => {
             return;
         } if (parseInt(cell) >= 1 && parseInt(cell) <= 255) {
             for (var i = 0; i < takenCells.length; i++) {
-                if (parseInt(cell) == takenCells[i]) {
+                if (parseInt(cell) === takenCells[i]) {
                     alert("Error: Unforutnately, this cell is already taken. Please enter another available cell!")
                     return;
                 }
@@ -72,7 +72,6 @@ const Donate = () => {
             return;
         }
         try {
-            // const docRef = await addDoc(collection(db, "Adopt a Cell"), user);
             await setDoc(doc(db, "Adopt a Cell", user.cell), user);
             setSubmitted(true);
 
@@ -89,7 +88,7 @@ const Donate = () => {
                     if (doc.data().verified) {
                         takenCells.push(parseInt(doc.data().cell));
                         setNames(names => new Set(names).add(doc.data().name))
-                    } else if (doc.data().verified == false) {
+                    } else if (doc.data().verified === false) {
                         reservedCells.push(parseInt(doc.data().cell));
                     }
                 });
@@ -109,27 +108,27 @@ const Donate = () => {
                 takenCells[min] = temp;
             }
 
-            for (var i = 0; i < reservedCells.length - 1; i++) {
-                var min = i;
-                for (var j = i + 1; j < reservedCells.length; j++) {
+            for (i = 0; i < reservedCells.length - 1; i++) {
+                min = i;
+                for (j = i + 1; j < reservedCells.length; j++) {
                     if (reservedCells[min] > reservedCells[j]) {
                         min = j;
                     }
                 }
-                var temp = reservedCells[i];
+                temp = reservedCells[i];
                 reservedCells[i] = reservedCells[min];
                 reservedCells[min] = temp;
             }
 
-            var j = 0;
+            j = 0;
             var k = 0;
-            for (var i = 1; i <= 255; i += 1) {
+            for (i = 1; i <= 255; i += 1) {
                 var color = available_color;
-                if (reservedCells[k] == i) {
+                if (reservedCells[k] === i) {
                     color = reserved_color;
                     k++;
                 }
-                if (takenCells[j] == i) {
+                if (takenCells[j] === i) {
                     color = taken_color;
                     j++;
                 }
@@ -172,7 +171,7 @@ const Donate = () => {
                         Welcome to the Adopt a Cell Program! Here you can adopt one of the solar cells that will be placed on the final solar vehicle.
                         To adopt a solar cell, we kindly request a $10 for every solar cell! You may adopt multiple solar cells! Once you have donated,
                         a member of our team will confirm the donation and you will officially have adopted a solar cell. Please check out the various cells
-                        we have available to pick from! You can donate cash to one of the leads or <a href="https://paypal.me/ieeeucr?locale.x=en_USv" target="_blank">Paypal</a>.
+                        we have available to pick from! You can donate cash to one of the leads or <a href="https://paypal.me/ieeeucr?locale.x=en_USv" target="_blank" rel="noreferrer">Paypal</a>.
                     </p>
                 </div>
                 <Separator height="4vh" />

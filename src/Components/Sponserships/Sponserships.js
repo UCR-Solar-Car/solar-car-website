@@ -22,7 +22,7 @@ const Sponserships = () => {
     return (
         <div className='sponserships'>
 
-            <Header img={Battery} name="Sponsers" />
+            <Header img={Battery} name="Sponsers" alt="Battery"/>
 
             <Separator height="5vh" />
 
@@ -75,8 +75,8 @@ const Sponserships = () => {
                     <Col xs={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column" }}>
                         <p className="sponser-text" >Interested in becoming a sponser? Learn more below!</p>
 
-                        <a href= "https://drive.google.com/file/d/1lYJ8mq1y9bDRtMmahY207laER16EXg82/view?usp=sharing" target="_blank">
-                            <Button className="sponser-button">
+                        <a href= "https://drive.google.com/file/d/1lYJ8mq1y9bDRtMmahY207laER16EXg82/view?usp=sharing" target="_blank" rel="noreferrer">
+                            <Button className="sponser-button"> 
                                 Become a Sponser
                             </Button>
                         </a>

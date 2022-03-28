@@ -38,48 +38,48 @@ const AboutUs = () => {
             </div>
 
             <div className="about-photo-wrapper">
-                <img className="about-photo" src={Render} />
+                <img className="about-photo" src={Render} alt="Solar Car Render" />
             </div>
 
             <Container fluid className="pillars">
                 <Row>
                     <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <div className="about-title">Leadership</div>
                         <p className="about-text">
-                            <p className="about-title">Leadership</p>
                             The UCR Solar Car team encourages members to be strong leaders in their
                             perspective industries and smart decision makers
                         </p>
                     </Col>
 
                     <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <p className="about-text">
-                            <p className="about-title">Innovation</p>
-                            The leads and all other members of the team work hard everyday to make
+
+                        <div className="about-title">Innovation</div>
+                        <p className="about-text">The leads and all other members of the team work hard everyday to make
                             creative improvements to the solar car electrically, mechanically, and design wise
                         </p>
                     </Col>
 
                     <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <p className="about-text">
-                            <p className="about-title">Dedication</p>
-                            Countless hours are dedicated outside of school to improve and perfect our solar
+
+                        <div className="about-title">Dedication</div>
+                        <p className="about-text">Countless hours are dedicated outside of school to improve and perfect our solar
                             car. Without the dedication of our team, progress and completion would not be possible
                         </p>
                     </Col>
                     <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <p className="about-text">
-                            <p className="about-title">Teamwork</p>
-                            The UCR Solar Car would not be possible without all members of the team, so
+
+                        <div className="about-title">Teamwork</div>
+                        <p className="about-text">The UCR Solar Car would not be possible without all members of the team, so
                             we encourage strong collaboration, open communication, and team bonding
                         </p>
                     </Col>
-                </Row>
-            </Container>
+                </Row >
+            </Container >
             <div className="about-photo-wrapper">
-                <img className="about-photo" src={GroupPhoto} />
+                <img className="about-photo" src={GroupPhoto} alt="Solar Car Team" />
             </div>
 
-        </div>
+        </div >
 
 
     )

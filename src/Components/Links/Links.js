@@ -1,8 +1,6 @@
 import React from 'react'
 import Header from '../Helper-Components/Header'
 import "./Links.css"
-import { Container, Row, Col } from "react-bootstrap"
-
 import Image from "../../Images/BackLeftTransparent.jpg"
 import Separator from '../Helper-Components/Separator'
 import LinkGroup from './LinkGroup'

@@ -7,14 +7,13 @@ import {
 import Separator from '../Helper-Components/Separator';
 import Logo from "../../Images/logo2.png"
 
-
 const Navigation = () => {
     return (
         <>
             <Separator height="8vh" />
             <Navbar fixed="top" collapseOnSelect expand="md" className='navbar'>
                 <Container fluid className = "navbar-container">
-                    <Navbar.Brand href="/" className="navbrand"><img className = "logo" src={Logo} /></Navbar.Brand>
+                    <Navbar.Brand href="/" className="navbrand"><img className = "logo" src={Logo} alt="UCR Solar Car Logo"/></Navbar.Brand>
                     <Navbar.Toggle className = "toggle" aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto nav">

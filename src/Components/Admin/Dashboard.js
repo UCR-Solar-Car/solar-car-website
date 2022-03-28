@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap"
-import { db, auth } from "../Donate/firebase.js";
+import { db } from "../Donate/firebase.js";
 import { collection, getDocs, updateDoc, deleteDoc, doc } from "firebase/firestore";
 import { Coin, Trash } from "react-bootstrap-icons"
 import "./Dashboard.css"
@@ -9,7 +9,6 @@ import "./Dashboard.css"
 const Dashboard = (props) => {
 
     const [retrieved, setRetrieved] = useState(false);
-    // const [solarCells, setSolarCells] = useState([])
     const [takenCells, setTakenCells] = useState([]);
     const [reservedCells, setReservedCells] = useState([]);
     const [trashStatus, setTrashStatus] = useState(false);
@@ -46,36 +45,18 @@ const Dashboard = (props) => {
         })();
     }
 
-    const sortTaken = () => {
-        const takenSorted = takenCells.sort((a, b) => {
-            return parseInt(b.cell) - parseInt(a.cell);
-        });
-        setTakenCells(takenSorted);
-    };
-
-    const sortReserved = () => {
-        const reservedSorted = reservedCells.sort((a, b) => {
-            return parseInt(b.cell) - parseInt(a.cell);
-        });
-        setReservedCells(reservedSorted);
-    };
-
     useEffect(() => {
         setTakenCells([]);
         setReservedCells([]);
         (async () => {
             const querySnapshot = await getDocs(collection(db, "Adopt a Cell"));
             querySnapshot.forEach((doc) => {
-                // setSolarCells(solarCells => [...solarCells, doc.data()]);
-                if (doc.data().verified == false) {
+                if (doc.data().verified === false) {
                     setReservedCells(reservedCells => [...reservedCells, doc.data()]);
-                } else if (doc.data().verified == true) {
+                } else if (doc.data().verified === true) {
                     setTakenCells(takenCells => [...takenCells, doc.data()]);
                 }
             });
-
-
-
             setRetrieved(true);
         })();
     }, [coinStatus, trashStatus, update])

@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <div className='home-container'>
-                <img className="home-img" src={Car} style={{ objectPosition: "50% 50%" }} />
+                <img className="home-img" src={Car} style={{ objectPosition: "50% 50%" }} alt="Solar Car Render"/>
                 <div className="home-tint"></div>
                 <h4 className='home-text'>UC Riverside Solar Car</h4>
             </div>
@@ -28,9 +28,7 @@ const Home = () => {
                     <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column" }}>
                         <p>30+ Students</p>
                         <p>8+ Majors</p>
-
                     </Col>
-
                 </Row>
             </div>
 
@@ -43,7 +41,7 @@ const Home = () => {
                 <div className='project-managers'>
                     <Row>
                         <Col lg={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <img src={ProjectManager_1} />
+                            <img src={ProjectManager_1} alt="Project Manager"/>
                         </Col>
                         <Col lg={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column" }}>
 
@@ -65,9 +63,6 @@ const Home = () => {
                             </div>
                         </Col>
 
-
-
-
                         <Col lg={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column" }}>
                             <div className='manager-bio'>
                                 <p className="manager-name">David Wilson</p>
@@ -86,12 +81,9 @@ const Home = () => {
                                 </p>
                             </div>
                         </Col>
-
                         <Col lg={6} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <img src={ProjectManager_2} />
+                            <img src={ProjectManager_2} alt="Project Manager"/>
                         </Col>
-
-
                     </Row>
                 </div>
             </div>

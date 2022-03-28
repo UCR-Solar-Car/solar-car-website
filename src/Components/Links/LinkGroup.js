@@ -13,7 +13,7 @@ const LinkGroup = ({ links, name }) => {
                     {
                         links.map(link => (
                             <Col lg={3} sm={6} style={{ display: 'flex', justifyContent: 'center' }}>
-                                <a className="link" href={link[1]} target="_blank">
+                                <a className="link" href={link[1]} target="_blank" rel="noreferrer">
                                     {link[0]}
                                 </a>
                             </Col>

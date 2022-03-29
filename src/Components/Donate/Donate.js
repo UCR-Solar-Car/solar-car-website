@@ -178,14 +178,14 @@ const Donate = () => {
                 <Container>
                     <form className="adopt-form" onSubmit={handleSubmit}>
                         <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <Col xs={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input className="input" type="text" name="cell" placeholder="Cell Number" value={cell} onChange={handleChange} /></Col>
-                            <Col xs={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input className="input" type="text" name="name" placeholder="Name to Display" value={name} onChange={handleChange} /></Col>
-                            <Col xs={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input className="input" type="text" name="email" placeholder="Email" value={email} onChange={handleChange} /></Col>
-                            <Col xs={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input className="input" type="text" name="phone" placeholder="Phone" value={phone} onChange={handleChange} /></Col>
-                            <Col xs={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input className="input" type="text" name="username" placeholder="PayPal Username" value={username} onChange={handleChange} /></Col>
-                            <Col xs={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input type="checkbox" name="paid" value={checked} onChange={handleChecked}></input>
+                            <Col md={4} sm={6} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input className="input" type="text" name="cell" placeholder="Cell Number" value={cell} onChange={handleChange} /></Col>
+                            <Col md={4} sm={6} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input className="input" type="text" name="name" placeholder="Name to Display" value={name} onChange={handleChange} /></Col>
+                            <Col md={4} sm={6} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input className="input" type="text" name="email" placeholder="Email" value={email} onChange={handleChange} /></Col>
+                            <Col md={4} sm={6} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input className="input" type="text" name="phone" placeholder="Phone" value={phone} onChange={handleChange} /></Col>
+                            <Col md={4} sm={6} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input className="input" type="text" name="username" placeholder="PayPal Username" value={username} onChange={handleChange} /></Col>
+                            <Col md={4} sm={6} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><input type="checkbox" name="paid" value={checked} onChange={handleChecked}></input>
                                 <label htmlFor="paid" className='checked-label'> I have donated!</label><br></br></Col>
-                            <Col xs={12} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><div>
+                            <Col sm={12} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}><div>
                                 <button className="submit">Adopt a Cell</button>
                             </div></Col>
                         </Row>
@@ -195,33 +195,39 @@ const Donate = () => {
                     }
                 </Container>
                 <Separator height="5vh" />
-                <Container>
+                <Container fluid>
                     <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Col xs={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <Col sm={4} xs={6} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <div className="sample-cell">
-                                <div>
-                                    <Cell color={available_color} index={available} />
+
+                                <div style={{ backgroundColor: available_color, margin: "5px", width: "fit-content", padding: "0 10px" }} className="cell">
+                                    <p>{available}</p>
                                 </div>
+
                                 <div>
                                     <p>Available Cells</p>
                                 </div>
                             </div>
 
                         </Col>
-                        <Col xs={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <Col sm={4} xs={6} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <div className="sample-cell">
                                 <div>
-                                    <Cell color={reserved_color} index={reserved} />
+                                    <div style={{ backgroundColor: reserved_color, margin: "5px", width: "fit-content", padding: "0 10px" }} className="cell">
+                                        <p>{reserved}</p>
+                                    </div>
                                 </div>
                                 <div>
                                     <p>Reserved Cells</p>
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={4} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <Col sm={4} xs={6} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                             <div className="sample-cell">
                                 <div>
-                                    <Cell color={taken_color} index={taken} />
+                                    <div style={{ backgroundColor: taken_color, margin: "5px", width: "fit-content", padding: "0 10px" }} className="cell">
+                                        <p>{taken}</p>
+                                    </div>
                                 </div>
                                 <div>
                                     <p>Taken Cells</p>
@@ -231,7 +237,7 @@ const Donate = () => {
                     </Row>
                 </Container>
 
-                <Container>
+                <Container fluid style={{ padding: "15px" }}>
                     <Row style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         {
                             cells
@@ -244,7 +250,7 @@ const Donate = () => {
                         {
                             Array.from(names).map((name) => (
                                 <Col xs={3} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                    <p className="name" style={{textAlign: "center"}}>{name}</p>
+                                    <p className="name" style={{ textAlign: "center" }}>{name}</p>
                                 </Col>
                             ))
                         }

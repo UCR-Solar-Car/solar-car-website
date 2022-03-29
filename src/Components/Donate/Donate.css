@@ -2,6 +2,8 @@
     font-size: 2em;
 }
 .sample-cell {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,3 +108,17 @@ input[type=checkbox] {
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+    .adopt-text {
+      font-size: 1em;
+    }
+
+    .names-text {
+        font-size: 1.5em;
+    }
+
+    .name {
+        font-size: 1em;
+    }
+  }

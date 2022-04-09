@@ -43,7 +43,7 @@ const AboutUs = () => {
 
             <Container fluid className="pillars">
                 <Row>
-                    <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column" }}>
                         <div className="about-title">Leadership</div>
                         <p className="about-text">
                             The UCR Solar Car team encourages members to be strong leaders in their
@@ -51,7 +51,7 @@ const AboutUs = () => {
                         </p>
                     </Col>
 
-                    <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column" }}>
 
                         <div className="about-title">Innovation</div>
                         <p className="about-text">The leads and all other members of the team work hard everyday to make
@@ -59,14 +59,14 @@ const AboutUs = () => {
                         </p>
                     </Col>
 
-                    <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column" }}>
 
                         <div className="about-title">Dedication</div>
                         <p className="about-text">Countless hours are dedicated outside of school to improve and perfect our solar
                             car. Without the dedication of our team, progress and completion would not be possible
                         </p>
                     </Col>
-                    <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <Col md={6} sm={12} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column" }}>
 
                         <div className="about-title">Teamwork</div>
                         <p className="about-text">The UCR Solar Car would not be possible without all members of the team, so

@@ -33,13 +33,13 @@ const Team = () => {
     ]
 
     const members = [
-        ["Electrical", "Sunny Zeng", "Chris De La Torre", "Daisy Rojas Garcia", "Kiana Triatan", "Kevin Ramirez"], //Electrical Team
-        ["Mechanical", "Andreas August"], //Mechanical Team
+        ["Electrical", "Leen Eisa", "David Wilson", "Sunny Zeng", "Chris De La Torre", "Daisy Rojas Garcia", "Kiana Triatan", "Jose Cervantes", "Aaron Young", "Karam Shanti"], //Electrical Team
+        ["Mechanical", "Andreas August", "Kevin Liu", "Merielle Young", "Maggie Ventura", "Patrick Aventino"], //Mechanical Team
         // ["Battery"], //Battery Team
         // ["Solar Array"], //Solar Array Team
-        ["Telemetry", "Hallie Pham", "Vy Vo", "Aaron Tam", "Divyank Shah"], //Telemetry Team
-        ["Driver Interface", "Aaron Tam", "Divyank Shah"], //Driver Interface
-        ["Business", "Divyank Shah"] //Business Team
+        ["Telemetry", "Hallie Pham", "Divyank Shah", "Ethan Wan", "Sachin Chopra"], //Telemetry Team
+        ["Driver Interface", "Divyank Shah", "Ethan Wan", "Kavin Phabiani", "Harjyot Sidhu", "Paul Ullman"], //Driver Interface
+        ["Business", "Divyank Shah", "Kevin Kuang", "Sekirou Shimono", "Aaron Yang"] //Business Team
     ]
 
     return (
